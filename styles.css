@@ -44,7 +44,7 @@ a {
 }
 
 .bck-light-blue::after {
-  bottom: -28px;
+  bottom: -27px;
 }
 
 .volver {
@@ -53,8 +53,9 @@ a {
 
 .close {
   background-color: #13bf9e;
-  line-height: 0;
+  line-height: 1;
   font-size: 25px;
+  padding: 8px 12px !important;
 }
 
 .btn-outline-info {
@@ -235,4 +236,65 @@ hr.dashed {
 
 .modal-content {
   background-color: #e5f9f7;
+}
+
+.btn-salir {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+.btn-salir a {
+  padding-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.btn-salir a:hover {
+  color: #fff;
+}
+.btn-salir a span {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  -webkit-transform: translateX(10px);
+  transform: translateX(10px);
+  margin-right: 15px;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+.btn-salir img {
+  max-width: 35px;
+  max-height: 35px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid white;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+.btn-salir.dark img {
+  background-color: #13bf9e;
+}
+.btn-salir.dark a {
+  color: #1a1a1a;
+}
+.btn-salir:hover span {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+.btn-salir:hover img {
+  cursor: pointer;
+  background-color: #13bf9e;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
 }

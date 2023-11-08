@@ -12,6 +12,19 @@ main,
   color: #000000;
 }
 
+strong {
+  color: #13bf9e;
+}
+
+.modal-body strong {
+  color: #000000;
+}
+
+em {
+  font-weight: 700;
+  border-bottom: 1px solid;
+}
+
 a {
   color: #104276;
 }
@@ -216,11 +229,25 @@ hr.dashed {
 }
 .accordion-item:nth-child(3),
 .accordion-item:nth-child(3) .accordion-header button {
-  background-color: #1f9ac4;
+  background-color: #13b6ed;
 }
 
 .accordion-button::after {
   background-color: #000000;
+  background-image: none;
+  content: ">";
+  color: white;
+  transform: rotate(90deg);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: none;
+  transform: rotate(-90deg);
 }
 
 .modal .btn-close {
@@ -249,6 +276,7 @@ hr.dashed {
   -webkit-box-direction: reverse;
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
+  background: none;
 }
 .btn-salir a {
   padding-right: 10px;
